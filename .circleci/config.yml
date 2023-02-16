@@ -276,7 +276,7 @@ jobs:
       - aws-s3/copy:
           install-aws-cli: false
           arguments: |
-            --cache-control "max-age=15" \
+            --cache-control \"max-age=15\" \
             --acl bucket-owner-full-control
           from: README.md
           to: "s3://aws-s3-orb-explore/source-code/"
