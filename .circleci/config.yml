@@ -19,7 +19,7 @@ jobs:
       - aws-s3/copy:
           install-aws-cli: false
           arguments: |
-            --recursive
+            --recursive \
             --acl public-read-write
           from: README.md
           to: "s3://aws-s3-orb-explore/source-code/"
